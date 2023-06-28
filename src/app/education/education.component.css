@@ -1,0 +1,34 @@
+
+  .education-bar {
+    background-color: #f8f9fa;
+    padding: 10px 15px;
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .education-bar .education-bar-item {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 14px;
+    color: #6c757d;
+  }
+
+  .education-bar .education-bar-item:last-child {
+    margin-right: 0;
+  }
+
+  .education-bar .education-bar-item a {
+    color: #6c757d;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .education-bar .education-bar-item a:hover {
+    color: #343a40;
+  }
+
+  .duration {
+    margin-top: auto;
+    text-align: right;
+    color: #6c757d;
+  }

@@ -1,8 +1,21 @@
-<section>
-    <h2>Education</h2>
-    <ul>
-      <li>Bachelor's Degree in Computer Science, XYZ University</li>
-      <li>Master's Degree in Software Engineering, ABC University</li>
-    </ul>
-  </section>
-  
+<div class="education-bar">
+  <span class="education-bar-item">Education:</span>
+  <div class="card-deck">
+    <ng-container *ngFor="let detail of educationDetails">
+      <div class="card mb-3">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-8">
+              <h5 class="card-title">{{ detail.institution }}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">{{ detail.degree }}</h6>
+              <p class="card-text">From: {{ detail.location }}</p>
+            </div>
+            <div class="col-md-4">
+              <div class="duration text-right">{{ detail.duration }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
